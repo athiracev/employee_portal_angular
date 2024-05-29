@@ -1,0 +1,70 @@
+<div class="w-100 row">
+    <div class="col-2">
+        <div style="height: 93vh;" class="bg-dark pt-5">
+            <h5 class="text-center mt-5">
+                <a routerLink="/home" class="text-light text-decoration-none">Home</a>
+            </h5>
+            <h5 class="text-center mt-5">
+                <a routerLink="/employee" class="text-light text-decoration-none">Employee</a>
+            </h5>
+        </div>
+
+    </div>
+    <div class="col-10 p-5">
+        <h3>Employee List</h3>
+        <div class="d-flex ">
+            <a routerLink="/employee/addemp" class="ms-auto">
+                <button type="submit" class="btn btn-success">
+                    <i class="fa-regular fa-user" style="color: #f3f3f5;"></i>
+                    Add Employee</button>
+            </a>
+
+        </div>
+        <h2>{{a | date}}</h2>
+        <div class="form-floating mb-3 w-50">
+            <div class="d-flex justify-content-between mb-4">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Enter to search">
+                <button type="submit" class="btn btn-info ms-2">Sort</button>
+
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mb-4">
+            <button type="submit" class="btn btn-warning ms-auto">
+                <i class="fa-solid fa-file-export"></i>Export</button>
+        </div>
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Anu</td>
+                        <td>anu@gmail.com</td>
+                        <td>
+                            <button class="btn btn-success">Active
+
+                            </button>
+                        </td>
+                        <td>
+                            <a routerLink="/employee/editemp/1"><i class="fa-solid fa-pen-to-square me-4"
+                                    style="color: #1e39a4;"></i></a>
+                            <i class="fa-solid fa-trash" style="color: #e81721;"></i>
+
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
