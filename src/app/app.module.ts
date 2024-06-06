@@ -7,13 +7,19 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { CalenderComponent } from './calender/calender.component';
+import { ChartComponent } from './chart/chart.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    CalenderComponent,
+    ChartComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
