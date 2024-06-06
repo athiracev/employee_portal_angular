@@ -8,4 +8,18 @@ import { Component } from '@angular/core';
 export class EmpListComponent {
   a=new Date()
 
+
+
+  // sortId(){
+  //   this.employees.sort((a:any,b:any)=>a.id-b.id)
+
+  // }
+
+  // sortUsername(){
+  //   this.employees.sort((a:any,b:any)=>a.username.localeCompare(b.username))
+  // }
+
 }
+
+
+

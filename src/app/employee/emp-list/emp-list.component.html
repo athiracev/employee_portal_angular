@@ -22,9 +22,14 @@
         </div>
         <h2>{{a | date}}</h2>
         <div class="form-floating mb-3 w-50">
-            <div class="d-flex justify-content-between mb-4">
+            <div class="dropdown d-flex justify-content-between mb-4">
                 <input type="text" class="form-control" id="floatingInput" placeholder="Enter to search">
-                <button type="submit" class="btn btn-info ms-2">Sort</button>
+                <button type="button" class="btn btn-info ms-2 dropdown-toggle" id="dropdown" data-bs-toggle="dropdown"
+                    aria-expanded="false">Sort</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li class="dropdown-item">Sort By Id</li>
+                    <li class="dropdown-item">Sort By Username</li>
+                </ul>
 
             </div>
         </div>
@@ -46,6 +51,37 @@
                 <tbody>
                     <tr>
                         <td>1</td>
+                        <td>Kavya</td>
+                        <td>kavya@gmail.com</td>
+                        <td>
+                            <button class="btn btn-success">Active
+
+                            </button>
+                        </td>
+                        <td>
+                            <a routerLink="/employee/editemp/1"><i class="fa-solid fa-pen-to-square me-4"
+                                    style="color: #1e39a4;"></i></a>
+                            <i class="fa-solid fa-trash" style="color: #e81721;"></i>
+
+                        </td>
+                    <tr>
+                        <td>2</td>
+                        <td>Karish</td>
+                        <td>krish@gmail.com</td>
+                        <td>
+                            <button class="btn btn-success">Active
+
+                            </button>
+                        </td>
+                        <td>
+                            <a routerLink="/employee/editemp/1"><i class="fa-solid fa-pen-to-square me-4"
+                                    style="color: #1e39a4;"></i></a>
+                            <i class="fa-solid fa-trash" style="color: #e81721;"></i>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
                         <td>Anu</td>
                         <td>anu@gmail.com</td>
                         <td>
@@ -59,8 +95,9 @@
                             <i class="fa-solid fa-trash" style="color: #e81721;"></i>
 
                         </td>
-
                     </tr>
+
+
                 </tbody>
             </table>
         </div>
