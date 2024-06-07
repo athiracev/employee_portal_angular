@@ -1,1 +1,21 @@
-<p>profile works!</p>
+<div class="d-flex flex-column justify-content-center align-items-center border shadow " style="height: 100%;">
+    <button class="btn btn-link" (click)="onStatus()" *ngIf="!profileStatus">Edit Admin Profile</button>
+    <div *ngIf="profileStatus">
+
+        <form  class="p-5" #admonForm="ngForm" (ngSubmit)="handleSubmit()">
+            <label >
+                <input id="ddd" type="text" (change)="getFile($event)" style="visibility: hidden;">
+                <img [src]="profilePicture" alt="image" width="250px" >
+
+            </label>
+
+            <input type="email" required [(ngModel)]="adminDetails.email"  class="form-control my-3" placeholder="Enter Admin's Email ID">
+            <input type="text" required class="form-control mb-3" [(ngModel)]="adminDetails.password" placeholder="Enter Admin's Password">
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-success" type="submit">Update</button>
+                <button type="button" class="btn btn-danger" (click)="onStatus()" >Cancel</button>
+            </div>
+        </form>
+
+    </div>
+</div>
